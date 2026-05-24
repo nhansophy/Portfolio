@@ -235,6 +235,48 @@ nav a.active::after {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
+/* TECH BANNER */
+.tech-banner {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 14px 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.tech-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+
+.tech-track span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tech-track span img {
+  width: 22px;
+  height: 22px;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* ── PROJECTS GRID — 4 col row1, 2 col row2 centered ── */
 
